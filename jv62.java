@@ -1,0 +1,15 @@
+public class jv62
+{
+    public static int sum(int start, int end) {
+	if(end > start) {
+	    return end + sum(start,end - 1);
+	} else {
+	    return end;
+	}
+    }
+    public static void main(String[] args)
+    {
+	int result = sum(7, 10);
+	System.out.println(result);
+    }
+}
